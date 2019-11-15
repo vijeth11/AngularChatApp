@@ -1,3 +1,12 @@
 div{
     border: 1px solid black;
 }
+.row{
+    margin-left: -1px;
+    margin-right: 0px;
+}
+
+.col-sm-12 .col-md-12{
+    padding-left: 0px;
+    padding-right: 0px;
+}
