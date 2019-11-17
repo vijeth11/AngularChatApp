@@ -20,9 +20,17 @@
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
+    "@progress/kendo-angular-conversational-ui": "^2.0.0",
+    "@progress/kendo-theme-bootstrap": "^4.4.0",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@progress/kendo-angular-buttons": "^5.0.0",
+    "@progress/kendo-angular-common": "^1.0.0",
+    "@progress/kendo-angular-l10n": "^2.0.0",
+    "@progress/kendo-angular-intl": "^2.0.0",
+    "@progress/kendo-angular-popup": "^3.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",

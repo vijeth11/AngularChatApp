@@ -1,4 +1,4 @@
-<div class="row" style="height: -webkit-fill-available;">
+<div class="row" style="height: 100%;">
   <div class="col-sm-4 col-md-4">
     <ul>
       <li>test1</li>
@@ -8,39 +8,86 @@
   <div class="col-sm-8 col-md-8" style="padding-left: 0;padding-bottom: 0;">
     <div class="row">
       <div class="col-sm-12 col-md-12">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-dark"
-          style="height: 100%;"
-        >
-          <a class="navbar-brand" href="#"><img src="../favicon.ico"/></a>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
-            </ul>
-            <ul class="navbar-nav my-2 my-lg-0">
-              <li class="nav-item"><span class="navbar-text">test</span></li>
-              <li class="nav-item"><span class="navbar-text">test1</span></li>
-            </ul>
-          </div>
+        <nav class="navbar navbar-light bg-light" style="padding-left:4vh">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/image1.jpg"
+              width="35"
+              height="35"
+              class="rounded-circle"
+              alt=""
+            />
+            <span style="padding-left: 2vh;">Bootstrap</span>
+          </a>
         </nav>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12">
-        <ul>
-          <li>test1</li>
-          <li>test2</li>
-        </ul>
+    <div class="row" style="height: 84vh;">
+      <div class="col-sm-12 col-md-12" style="height: 100%;">
+        <div class="panel-body" style="overflow-y: auto;height: inherit;">
+          <footer class="card messageContent">
+            <ul class="list-group list-group-flush" *ngFor="let item of [1]">
+              <li class="list-group-item" style="border:0px">
+                <div
+                  style="display: inline-block;vertical-align: top;padding-right:2vh;"
+                >
+                  <img
+                    src="assets/image1.jpg"
+                    width="25"
+                    height="25"
+                    class="rounded-circle"
+                  />
+                </div>
+                <div
+                  style="text-align:left;background:#2C3E50;max-width:48%;border-radius:25px;border:1px solid #A9A9A9;color:white;padding:12px;display:inline-flex;"
+                >
+                  When you're backed against the wall, break the god damn thing
+                  down. {{ item }}
+                </div>
+              </li>
+              <li class="list-group-item" style="text-align:right;border:0px">
+                <div
+                  style="text-align:left;background:white;max-width:48%;border-radius:25px;border:1px solid #A9A9A9;color:black;padding:12px;display:inline-flex;"
+                >
+                  gfgbgdgefsfsfsg {{ item }}
+                </div>
+                <div
+                  style="display:inline-block;vertical-align: top;padding-left:2vh;"
+                >
+                  <img
+                    src="assets/image1.jpg"
+                    width="25"
+                    height="25"
+                    class="rounded-circle"
+                  />
+                </div>
+              </li>
+            </ul>
+          </footer>
+        </div>
       </div>
+    </div>
+    <div class="row">
+      <footer style="width:100%" class="input-group">
+        <input
+          id="messageTyped"
+          type="text"
+          class="form-control"
+          size="10"
+          placeholder="Write a message ..."
+          aria-describedby="start-date"
+        />
+        <span style="padding-left:2vh;padding-right:2vh;padding-top: 7px;"
+          ><i class="fa fa-paperclip fa-lg" style="padding-top:11"></i
+        ></span>
+        <span
+          style="padding-left:2vh;padding-right:2vh;padding-top:7px;background:#3f3b3b"
+          ><i
+            class="fa fa-paper-plane-o fa-lg"
+            style="color:white;padding-top: 11"
+          ></i
+        ></span>
+      </footer>
     </div>
   </div>
 </div>

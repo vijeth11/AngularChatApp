@@ -6,7 +6,30 @@ div{
     margin-right: 0px;
 }
 
-.col-sm-12 .col-md-12{
+.col-md-12, .col-sm-12, .col-sm-8, .col-md-8, .col-sm-4, .col-md-4{
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.navbar{
+    padding:0;
+}
+.navbar-brand{
+    color:black;
+    FONT-SIZE: 15px !important;
+    margin-right:0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left:3vh;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.messageContent{
+    position: relative;
+    height: 100%;
+    width:100%;
 }
