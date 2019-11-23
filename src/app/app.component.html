@@ -1,10 +1,10 @@
 <div class="row" style="height: 100%;" #completeScreen>
   <div class="col-sm-4 col-md-4">
     <div class="row" #userInfoScreen>
-      <div class="col-sm-12 col-md-12" >
-        <mat-accordion>
-          <mat-expansion-panel (afterExpand)="expanded(true)" (afterCollapse)="expanded(false)">
-            <mat-expansion-panel-header>
+      <div class="col-sm-12 col-md-12">
+        <mat-accordion >
+          <mat-expansion-panel (afterExpand)="expanded(true)" (afterCollapse)="expanded(false)" style="padding-top:4vh;padding-bottom: 4vh;">
+            <mat-expansion-panel-header class="disable_ripple" style="background: white;">
               <mat-panel-title>
                 Personal data
               </mat-panel-title>
@@ -31,10 +31,10 @@
     </div>
     <div class="row" #footerScreen>
       <footer style="width:100%" class="input-group">
-        <button [ngStyle]="{'background': AddContactButtonColor}" (mouseEnter)="console.log(AddContactButtonColor)" (mouseLeave)="AddContactButtonColor='#32465A'" class="raised" style="display:inline-block;text-align: center;width: 50%;padding-top: 1vh;padding-bottom: 1vh">
+        <button [ngStyle]="{'background': AddContactButtonColor}" (mouseover)="AddContactButtonColor = '#435F7A'" (mouseout)="AddContactButtonColor='#32465A'" class="raised" >
           <span style="color:white">Add new Contact</span>
       </button>
-      <button [ngStyle]="{'background': AddNewContactButtonColor}"(mouseEnter)="AddNewContactButtonColor = '#435F7A'" (mouseLeave)="AddNewContactButtonColor='#32465A'" class="raised" style="display:inline-block;text-align:center;width:49%;padding-top: 1vh;padding-bottom: 1vh;">
+      <button [ngStyle]="{'background': AddNewContactButtonColor}"(mouseover)="AddNewContactButtonColor = '#435F7A'" (mouseout)="AddNewContactButtonColor = '#32465A'" class="raised">
           <span style="color:white">Add New Group</span>
       </button>
       </footer>

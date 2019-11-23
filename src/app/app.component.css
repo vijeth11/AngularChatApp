@@ -1,5 +1,5 @@
 div{
-    border: 0px solid black;
+    border: 1px solid black;
 }
 .row{
     margin-left: -1px;
@@ -35,6 +35,11 @@ div{
 }
 .raised {
     /* ... */
+    display:inline-block;
+    text-align: center;
+    width: 50%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     border-left: 1px solid #38678B;
     border-top: 1px solid #38678B;
     border-right: 1px solid #24435B;
@@ -42,3 +47,7 @@ div{
     -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
     -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
   }
+  
+  .disable_ripple:hover{
+    background: white;
+    }
