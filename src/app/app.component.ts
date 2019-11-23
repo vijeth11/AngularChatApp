@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatFormField,} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularChat';
+  AddContactButtonColor = '#32465A';
+  AddNewContactButtonColor = '#32465A';
 }

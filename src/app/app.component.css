@@ -33,3 +33,12 @@ div{
     height: 100%;
     width:100%;
 }
+.raised {
+    /* ... */
+    border-left: 1px solid #38678B;
+    border-top: 1px solid #38678B;
+    border-right: 1px solid #24435B;
+    border-bottom:  1px solid #24435B;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  }
