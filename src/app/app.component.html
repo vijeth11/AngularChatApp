@@ -3,7 +3,7 @@
     <div class="row" #userInfoScreen>
       <div class="col-sm-12 col-md-12">
         <mat-accordion >
-          <mat-expansion-panel (afterExpand)="expanded(true)" (afterCollapse)="expanded(false)" style="padding-top:4vh;padding-bottom: 4vh;">
+          <mat-expansion-panel (opened)="expanded(true)" (closed)="expanded(false)" style="padding-top:4vh;padding-bottom: 4vh;">
             <mat-expansion-panel-header class="disable_ripple" style="background: white;">
               <mat-panel-title>
                 Personal data
@@ -25,8 +25,16 @@
       </div>
     </div>
     <div class="row" [ngStyle]="{'height': HeightOfTheUserList}">
-      <div class="col-sm-12 col-md-12">
-
+      <div class="col-sm-12 col-md-12" [ngStyle]="{'height': HeightOfTheUserList}">
+        <mat-list [ngStyle]="{'max-height': HeightOfTheUserList}">
+          <mat-list-item *ngFor="let message of messages" style='background:#2C3E50;color:white;'>
+            <img matListAvatar style='vertical-align:top' src="./assets/image1.jpg" width='50' height='50' class='rounded-circle' alt=''>
+            <h2 matLine style="font-weight:bold;"> {{message.from}} </h2>
+            <p matLine>
+              <span> {{message.display}} </span>
+            </p>
+          </mat-list-item>
+        </mat-list>
       </div>
     </div>
     <div class="row" class="footer" #footerScreen>

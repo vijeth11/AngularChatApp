@@ -15,14 +15,24 @@ export class AppComponent {
   title = 'angularChat';
   AddContactButtonColor = "#32465A";
   AddNewContactButtonColor = "#32465A";
-  HeightOfTheUserList = "85.5%"
+  HeightOfTheUserList = "83%"
+  messages:{from:string,display:string}[]=[];
+
+  constructor(){
+    for(var i=0;i<2;i++){
+    this.messages.push({from:"Vijeth",display:"how are you?"});
+    this.messages.push({from:"Tester",display:"i  am fine"});
+    this.messages.push({from:"Grine",display:"vijeth are you coming"});
+    this.messages.push({from:"Allen",display:"hi i am in also "});
+    }
+  }
   expanded(data:boolean){
     if(data){
     //this.HeightOfTheUserList = String(this.completeScreen.nativeElement.offsetHeight - this.userInfoScreen.nativeElement.offsetHeight-this.footerScreen.nativeElement.offsetHeight)+"px";
     this.HeightOfTheUserList= "65%";
     console.log(this.HeightOfTheUserList);
     }else{
-      this.HeightOfTheUserList = "85.5%";
+      this.HeightOfTheUserList = "83%";
     }
     console.log(this.userInfoScreen.nativeElement.offsetHeight);
   }
