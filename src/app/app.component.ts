@@ -17,7 +17,13 @@ export class AppComponent {
   AddNewContactButtonColor = "#32465A";
   HeightOfTheUserList = "85.5%"
   expanded(data:boolean){
+    if(data){
     //this.HeightOfTheUserList = String(this.completeScreen.nativeElement.offsetHeight - this.userInfoScreen.nativeElement.offsetHeight-this.footerScreen.nativeElement.offsetHeight)+"px";
+    this.HeightOfTheUserList= "65%";
+    console.log(this.HeightOfTheUserList);
+    }else{
+      this.HeightOfTheUserList = "85.5%";
+    }
     console.log(this.userInfoScreen.nativeElement.offsetHeight);
   }
 }
