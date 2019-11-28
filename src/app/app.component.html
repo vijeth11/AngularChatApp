@@ -26,7 +26,29 @@
     </div>
     <div class="row" [ngStyle]="{'height': HeightOfTheUserList}">
       <div class="col-sm-12 col-md-12">
-        
+              <div class="panel-body" [ngStyle]="{'max-height': maxHeightOfUserList}" style="overflow-y: auto;" >
+                  <!--<ul class="list-group list-group-flush ">
+                      <li style='background:#2C3E50;color:white;padding-left:2vh;'class='list-group-item' *ngFor="let message of messages">
+                        <div style='display:inline-block;'>
+                         <img style='vertical-align:top' src='./assets/image1.jpg' width='50' height='50' class='rounded-circle' alt=''>
+                        </div>
+                        <div style='display:inline-block;vertical-align: bottom'>
+                           <span style='font-size:15px;font-weight:bold;padding-left: 3vh;'> {{ message.from}}</span>
+                           <br> 
+                           <span style='font-size:15px;padding-left: 3vh;'> {{ message.display}}</span>
+                        </div>
+                      </li>
+                    </ul>-->
+                    <mat-list>
+                        <mat-list-item style='background:#2C3E50;color:white;padding-left:2vh;' *ngFor="let message of messages">
+                          <img matListAvatar style='vertical-align:top' src='./assets/image1.jpg' width='50' height='50' class='rounded-circle' alt=''>
+                          <h3 matLine> {{message.from}} </h3>
+                          <p matLine>
+                            <span> {{message.display}} </span>
+                          </p>
+                        </mat-list-item>
+                      </mat-list>
+              </div>       
       </div>
     </div>
     <div class="row" class="footer" #footerScreen>

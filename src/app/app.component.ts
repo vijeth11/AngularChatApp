@@ -16,6 +16,7 @@ export class AppComponent {
   AddContactButtonColor = "#32465A";
   AddNewContactButtonColor = "#32465A";
   HeightOfTheUserList = "83%"
+  maxHeightOfUserList="77vh";
   messages:{from:string,display:string}[]=[];
 
   constructor(){
@@ -30,9 +31,11 @@ export class AppComponent {
     if(data){
     //this.HeightOfTheUserList = String(this.completeScreen.nativeElement.offsetHeight - this.userInfoScreen.nativeElement.offsetHeight-this.footerScreen.nativeElement.offsetHeight)+"px";
     this.HeightOfTheUserList= "65%";
-    console.log(this.HeightOfTheUserList);
+    this.maxHeightOfUserList="62vh"
+    console.log(this.maxHeightOfUserList);
     }else{
       this.HeightOfTheUserList = "83%";
+      this.maxHeightOfUserList="77vh";
     }
     console.log(this.userInfoScreen.nativeElement.offsetHeight);
   }
