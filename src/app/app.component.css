@@ -49,7 +49,7 @@ div{
   }
   
  
-   mat-list {    
+   mat-nav-list {    
     width: 100%;
     min-height: 150px;
     height: 100%;
@@ -57,5 +57,9 @@ div{
     flex-direction: column;
     padding-top: 0px;
     flex-grow: 1;
-    overflow:auto;
+    overflow-y: scroll;
+    overflow: hidden;
       }
+    .highlight-Pointed-item:hover{
+        background-color: whitesmoke;
+    }

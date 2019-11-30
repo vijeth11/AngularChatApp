@@ -17,14 +17,14 @@ export class AppComponent {
   AddNewContactButtonColor = "#32465A";
   HeightOfTheUserList = "78%"
   maxHeightOfUserList="77vh";
-  messages:{from:string,display:string}[]=[];
+  messages:{from:string,display:string,color:string,setDefault:boolean}[]=[];
 
   constructor(){
     for(var i=0;i<2;i++){
-    this.messages.push({from:"Vijeth",display:"how are you?"});
-    this.messages.push({from:"Tester",display:"i  am fine"});
-    this.messages.push({from:"Grine",display:"vijeth are you coming"});
-    this.messages.push({from:"Allen",display:"hi i am in also "});
+    this.messages.push({from:"Vijeth",display:"how are you?",color:"#2C3E50",setDefault:false});
+    this.messages.push({from:"Tester",display:"i  am fine",color:"#2C3E50",setDefault:false});
+    this.messages.push({from:"Grine",display:"vijeth are you coming",color:"#2C3E50",setDefault:false});
+    this.messages.push({from:"Allen",display:"hi i am in also ",color:"#2C3E50",setDefault:false});
     }
   }
   expanded(data:boolean){
@@ -37,5 +37,15 @@ export class AppComponent {
       this.HeightOfTheUserList = "78%";
       this.maxHeightOfUserList="77vh";
     }
+  }
+  setBackgroundColor(index:any,type:string){
+    if(!this.messages[index].setDefault){
+    this.messages[index].color= type==="mouseenter"?"#32465A":"#2C3E50";
+    }
+  }
+
+  setdefaultcolor(index:any){
+       this.messages[index].setDefault=!this.messages[index].setDefault;
+       this.messages[index].color = this.messages[index].setDefault?"#32465A":"#2C3E50";
   }
 }
