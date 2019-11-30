@@ -1,29 +1,6 @@
 <div class="row" style="height: 100%;" #completeScreen>
   <div class="col-sm-4 col-md-4">
-    <div class="row" #userInfoScreen>
-      <div class="col-sm-12 col-md-12">
-        <mat-accordion >
-          <mat-expansion-panel (opened)="expanded(true)" (closed)="expanded(false)" style="padding-top:4vh;padding-bottom: 4vh;">
-            <mat-expansion-panel-header class="disable_ripple" style="background: white;">
-              <mat-panel-title>
-                Personal data
-              </mat-panel-title>
-              <mat-panel-description>
-                Type your name and age
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-        
-            <mat-form-field>
-              <input matInput placeholder="First name">
-            </mat-form-field>
-        
-            <mat-form-field>
-              <input matInput placeholder="Age">
-            </mat-form-field>
-          </mat-expansion-panel>
-          </mat-accordion>
-      </div>
-    </div>
+    <app-user-info-tab (Expanded)="expanded($event)"></app-user-info-tab>
     <div class="row" [ngStyle]="{'height': HeightOfTheUserList}">
       <div class="col-sm-12 col-md-12">
               <div class="panel-body" [ngStyle]="{'max-height': maxHeightOfUserList}" style="overflow-y: auto;" >

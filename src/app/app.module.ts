@@ -9,12 +9,14 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
 import {MatListModule} from '@angular/material/list';
+import { UserInfoTabComponent } from './user-info-tab/user-info-tab.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,    
+    AppComponent,
+    UserInfoTabComponent,    
   ],
   imports: [
     BrowserModule,
