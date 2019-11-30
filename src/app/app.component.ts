@@ -37,6 +37,5 @@ export class AppComponent {
       this.HeightOfTheUserList = "78%";
       this.maxHeightOfUserList="77vh";
     }
-    console.log(this.userInfoScreen.nativeElement.offsetHeight);
   }
 }

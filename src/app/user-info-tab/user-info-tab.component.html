@@ -26,13 +26,13 @@
         </mat-expansion-panel-header>
 
         <ul class="list-group list-group-flush">
-          <li style="background:#2C3E50;color:white" class="list-group-item">
+          <li style="background:#2C3E50;color:white" class="list-group-item" *ngFor="let detail of userInfoTypes">
             <div class="input-group search-box">
               <span
                 class="input-group-addon"
                 style="font-size: 0.5rem;padding-left: 3vh;padding-right:3vh;"
                 ><span
-                  class="fa fa-facebook fa-2x"
+                  [ngClass]="detail.class"
                   style="padding-top:1.89vh;padding-left:3vh;padding-right: 1vh;"
                 ></span
               ></span>
@@ -41,47 +41,7 @@
                 contenteditable="true"
                 style="width:70%;padding: 1vh;background: #32465A;color:white;"
               >
-                mikeross
-              </div>
-            </div>
-          </li>
-          <li style="background:#2C3E50;color:white" class="list-group-item">
-            <div class="input-group search-box">
-              <span
-                class="input-group-addon"
-                style="font-size: 0.5rem;padding-left: 3vh;padding-right: 3vh;"
-              >
-                <span
-                  class="fa fa-twitter fa-2x"
-                  style="padding-top:1.89vh;padding-left:3vh;"
-                ></span
-              ></span>
-              <div
-                id="twitter"
-                contenteditable="true"
-                style="width:70%;padding: 1vh;background: #32465A;color:white;"
-              >
-                ross81
-              </div>
-            </div>
-          </li>
-          <li style="background:#2C3E50;color:white" class="list-group-item">
-            <div class="input-group search-box">
-              <span
-                class="input-group-addon"
-                style="font-size: 0.5rem;padding-left: 3vh;padding-right: 3vh;"
-              >
-                <span
-                  class="fa fa-instagram fa-2x"
-                  style="padding-top:1.89vh;padding-left:3vh;"
-                ></span
-              ></span>
-              <div
-                id="instagram"
-                contenteditable="true"
-                style="width:70%;padding: 1vh;background: #32465A;color:white;"
-              >
-                mike.ross
+                {{detail.name}}
               </div>
             </div>
           </li>

@@ -7,10 +7,11 @@
     -moz-box-shadow: none;
     box-shadow: none;
     height:20px;
-    width: inherit;
     color: white;
 }
-
+.disable_ripple:hover{
+  background: #2C3E50;
+  }
 .search-box{
   height:25px;
   
@@ -34,3 +35,13 @@
   color: white; 
   align-content: center;
 } 
+
+.mat-accordion .mat-expansion-panel:last-of-type{
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mat-accordion .mat-expansion-panel:first-of-type {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
