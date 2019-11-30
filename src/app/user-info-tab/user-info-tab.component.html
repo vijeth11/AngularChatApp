@@ -4,7 +4,8 @@
       <mat-expansion-panel
         (opened)="expanded(true)"
         (closed)="expanded(false)"
-        style="padding-top:4vh;padding-bottom: 4vh; background: #2C3E50"
+        style="padding-top:4vh;background: #2C3E50"
+        [ngStyle]="{'padding-bottom': gapBetweenSearchAndUserinfo}"
       >
         <mat-expansion-panel-header
           class="disable_ripple"
@@ -15,18 +16,40 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
 
-        <mat-form-field>
-          <mat-list>
-            <mat-list-item style='background:#2C3E50;color:white;padding-left:2vh;' >
-              <p matLine>
-                <span class="fa fa-facebook fa-2x" style="padding-top:1vh;padding-left:3vh;padding-right:1vh"> </span>
-                <span> mikeross </span>
-              </p>
-            </mat-list-item>
-          </mat-list>
-        </mat-form-field>
+          <ul class="list-group list-group-flush">
+                                          <li style="background:#2C3E50;color:white" class="list-group-item">
+                                            <div class="input-group search-box">
+                                              <span class="input-group-addon"  style="font-size: 0.5rem;padding-left: 3vh;padding-right:3vh;"><span class="fa fa-facebook fa-2x"
+                                                  style="padding-top:1.89vh;padding-left:3vh;padding-right: 1vh;"></span></span>
+                                              <div id="facebook" contenteditable="true" style="width:70%;padding: 1vh;background: #32465A;color:white;" >mikeross</div>
+                                            </div>
+                                          </li>
+                                          <li style="background:#2C3E50;color:white" class="list-group-item">
+                                            <div class="input-group search-box">
+                                              <span class="input-group-addon"  style="font-size: 0.5rem;padding-left: 3vh;padding-right: 3vh;">
+                                                <span class="fa fa-twitter fa-2x"style="padding-top:1.89vh;padding-left:3vh;"></span></span>
+                                              <div id="twitter" contenteditable="true" style="width:70%;padding: 1vh;background: #32465A;color:white;" >ross81</div>
+                                            </div>
+                                          </li>
+                                          <li style="background:#2C3E50;color:white" class="list-group-item">
+                                            <div class="input-group search-box">
+                                              <span class="input-group-addon"  style="font-size: 0.5rem;padding-left: 3vh;padding-right: 3vh;">
+                                                <span class="fa fa-instagram fa-2x"style="padding-top:1.89vh;padding-left:3vh;"></span></span>
+                                              <div id="instagram" contenteditable="true" style="width:70%;padding: 1vh;background: #32465A;color:white;" >mike.ross</div>
+                                            </div>
+                                          </li>
+                                        </ul>    
 
       </mat-expansion-panel>
     </mat-accordion>
   </div>
+</div>
+<div class="row"> 
+    <div class="col-sm-12 col-md-12" style="background:#32465A">
+                <div class="input-group search-box" style="height:38px;padding-left: 5vh;">
+                    <span id="searchIcon" class="input-group-addon" id="start-date" style="font-size: 0.5rem;"><span class="fa fa-search fa-2x"
+                        style="padding-top:1.89vh;padding-left:1vh;"></span></span>
+                    <input id="searchbar" type="text" class="form-control searchBox"  style="height:38px" placeholder="Search contacts ..." aria-describedby="start-date">
+                  </div>
+    </div>
 </div>

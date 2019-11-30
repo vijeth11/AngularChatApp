@@ -9,12 +9,14 @@ import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 export class UserInfoTabComponent implements OnInit {
 
   @Output() Expanded:EventEmitter<boolean>  = new EventEmitter<boolean>();
+  public gapBetweenSearchAndUserinfo:string="4vh";
   constructor() { }
 
   ngOnInit() {
   }
 
   expanded(data:boolean){
+    this.gapBetweenSearchAndUserinfo = data ? "" : "4vh";
     this.Expanded.emit(data);
   }
 }
