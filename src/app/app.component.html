@@ -1,33 +1,7 @@
 <div class="row" style="height: 100%;" #completeScreen>
   <div class="col-sm-4 col-md-4">
     <app-user-info-tab (Expanded)="expanded($event)"></app-user-info-tab>
-    <div class="row" [ngStyle]="{'height': HeightOfTheUserList}">
-      <div class="col-sm-12 col-md-12">
-              <div class="panel-body" [ngStyle]="{'max-height': maxHeightOfUserList}" style="overflow-y: scroll;" >
-                  <!--<ul class="list-group list-group-flush ">
-                      <li style='background:#2C3E50;color:white;padding-left:2vh;'class='list-group-item' *ngFor="let message of messages">
-                        <div style='display:inline-block;'>
-                         <img style='vertical-align:top' src='./assets/image1.jpg' width='50' height='50' class='rounded-circle' alt=''>
-                        </div>
-                        <div style='display:inline-block;vertical-align: bottom'>
-                           <span style='font-size:15px;font-weight:bold;padding-left: 3vh;'> {{ message.from}}</span>
-                           <br> 
-                           <span style='font-size:15px;padding-left: 3vh;'> {{ message.display}}</span>
-                        </div>
-                      </li>
-                    </ul>-->
-                    <mat-nav-list>
-                        <mat-list-item class="highlight-Pointed-item"style='color:white;padding-left:2vh;' *ngFor="let message of messages;let i = index" (mouseenter)="setBackgroundColor(i,'mouseenter')" (mouseleave)="setBackgroundColor(i,'mouseleave')" (click)="setdefaultcolor(i)"[ngStyle]="{'background': message.color}">
-                          <img matListAvatar style='vertical-align:top' src='./assets/image1.jpg' width='50' height='50' class='rounded-circle' alt=''>
-                          <h3 matLine> {{message.from}} </h3>
-                          <p matLine>
-                            <span> {{message.display}} </span>
-                          </p>
-                        </mat-list-item>
-                      </mat-nav-list>
-              </div>       
-      </div>
-    </div>
+    <app-contactlist [HeightOfTheUserList]="HeightOfTheUserList" [maxHeightOfUserList]="maxHeightOfUserList" [messages]="messages" ></app-contactlist>
     <div class="row" class="footer" #footerScreen>
       <footer style="width:100%" class="input-group">
         <button [ngStyle]="{'background': AddContactButtonColor}" (mouseover)="AddContactButtonColor = '#435F7A'" (mouseout)="AddContactButtonColor='#32465A'" class="raised" >

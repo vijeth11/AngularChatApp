@@ -10,13 +10,15 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
 import {MatListModule} from '@angular/material/list';
 import { UserInfoTabComponent } from './user-info-tab/user-info-tab.component';
+import { ContactlistComponent } from './contactlist/contactlist.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserInfoTabComponent,    
+    UserInfoTabComponent,
+    ContactlistComponent,    
   ],
   imports: [
     BrowserModule,

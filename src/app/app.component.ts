@@ -9,9 +9,6 @@ import {MatFormField,} from '@angular/material/form-field';
 })
 export class AppComponent {
 
-  @ViewChild('userInfoScreen',{static:true}) userInfoScreen: ElementRef;
-  @ViewChild('completeScreen',{static:true}) completeScreen:ElementRef;
-  @ViewChild('footerScreen',{static:true}) footerScreen:ElementRef;
   title = 'angularChat';
   AddContactButtonColor = "#32465A";
   AddNewContactButtonColor = "#32465A";
@@ -38,14 +35,5 @@ export class AppComponent {
       this.maxHeightOfUserList="77vh";
     }
   }
-  setBackgroundColor(index:any,type:string){
-    if(!this.messages[index].setDefault){
-    this.messages[index].color= type==="mouseenter"?"#32465A":"#2C3E50";
-    }
-  }
-
-  setdefaultcolor(index:any){
-       this.messages[index].setDefault=!this.messages[index].setDefault;
-       this.messages[index].color = this.messages[index].setDefault?"#32465A":"#2C3E50";
-  }
+ 
 }
