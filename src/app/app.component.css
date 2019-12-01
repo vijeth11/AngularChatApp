@@ -57,9 +57,11 @@ div{
     flex-direction: column;
     padding-top: 0px;
     flex-grow: 1;
-    overflow-y: scroll;
-    overflow: hidden;
       }
-    .highlight-Pointed-item:hover{
-        background-color: whitesmoke;
+      ::-webkit-scrollbar {
+        width: 8px;  /* Remove scrollbar space */
+        background: #2C3E50;  /* Optional: just make scrollbar invisible */
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #1f3449;
     }

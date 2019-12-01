@@ -3,7 +3,7 @@
     <app-user-info-tab (Expanded)="expanded($event)"></app-user-info-tab>
     <div class="row" [ngStyle]="{'height': HeightOfTheUserList}">
       <div class="col-sm-12 col-md-12">
-              <div class="panel-body" [ngStyle]="{'max-height': maxHeightOfUserList}" style="overflow-y: auto;" >
+              <div class="panel-body" [ngStyle]="{'max-height': maxHeightOfUserList}" style="overflow-y: scroll;" >
                   <!--<ul class="list-group list-group-flush ">
                       <li style='background:#2C3E50;color:white;padding-left:2vh;'class='list-group-item' *ngFor="let message of messages">
                         <div style='display:inline-block;'>
