@@ -13,9 +13,9 @@ import { UserInfoTabComponent } from './chatappmenu/user-info-tab/user-info-tab.
 import { ContactlistComponent } from './chatappmenu/contactlist/contactlist.component';
 import { FooterComponent } from './chatappmenu/footer/footer.component';
 import { ChatappmenuComponent } from './chatappmenu/chatappmenu.component';
-import { ChatAppHeaderComponent } from './chat-app-header/chat-app-header.component';
-import { ChatAppFooterComponent } from './chat-app-footer/chat-app-footer.component';
-import { ChatMessagesDisplayComponent } from './chat-messages-display/chat-messages-display.component';
+import { ChatAppHeaderComponent } from './chatpage/chat-app-header/chat-app-header.component';
+import { ChatAppFooterComponent } from './chatpage/chat-app-footer/chat-app-footer.component';
+import { ChatMessagesDisplayComponent } from './chatpage/chat-messages-display/chat-messages-display.component';
 import { ChatpageComponent } from './chatpage/chatpage.component';
 
 

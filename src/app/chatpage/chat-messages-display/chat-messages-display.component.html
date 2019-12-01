@@ -2,8 +2,8 @@
         <div class="col-sm-12 col-md-12" style="height: 100%;">
           <div class="panel-body" style="overflow-y: auto;height: inherit;">
             <footer class="card messageContent">
-              <ul class="list-group list-group-flush" *ngFor="let item of [1,2,3,4,5]">
-                <li class="list-group-item" style="border:0px">
+              <ul class="list-group list-group-flush" *ngFor="let item of messages">
+                <li *ngIf="item.display==='left'"class="list-group-item" style="border:0px">
                   <div
                     style="display: inline-block;vertical-align: top;padding-right:2vh;"
                   >
@@ -17,15 +17,14 @@
                   <div
                     style="text-align:left;background:#2C3E50;max-width:48%;border-radius:25px;border:1px solid #A9A9A9;color:white;padding:12px;display:inline-flex;"
                   >
-                    When you're backed against the wall, break the god damn thing
-                    down. {{ item }}
+                   {{item.message}}
                   </div>
                 </li>
-                <li class="list-group-item" style="text-align:right;border:0px">
+                <li  *ngIf="item.display==='right'" class="list-group-item" style="text-align:right;border:0px">
                   <div
                     style="text-align:left;background:white;max-width:48%;border-radius:25px;border:1px solid #A9A9A9;color:black;padding:12px;display:inline-flex;"
                   >
-                    gfgbgdgefsfsfsg {{ item }}
+                    {{item.message}}
                   </div>
                   <div
                     style="display:inline-block;vertical-align: top;padding-left:2vh;"
