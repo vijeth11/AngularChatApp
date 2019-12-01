@@ -9,9 +9,12 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
 import {MatListModule} from '@angular/material/list';
-import { UserInfoTabComponent } from './user-info-tab/user-info-tab.component';
-import { ContactlistComponent } from './contactlist/contactlist.component';
-import { FooterComponent } from './footer/footer.component';
+import { UserInfoTabComponent } from './chatappmenu/user-info-tab/user-info-tab.component';
+import { ContactlistComponent } from './chatappmenu/contactlist/contactlist.component';
+import { FooterComponent } from './chatappmenu/footer/footer.component';
+import { ChatappmenuComponent } from './chatappmenu/chatappmenu.component';
+import { ChatAppHeaderComponent } from './chat-app-header/chat-app-header.component';
+import { ChatAppFooterComponent } from './chat-app-footer/chat-app-footer.component';
 
 
 
@@ -20,7 +23,10 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     UserInfoTabComponent,
     ContactlistComponent,
-    FooterComponent,    
+    FooterComponent,
+    ChatappmenuComponent,
+    ChatAppHeaderComponent,
+    ChatAppFooterComponent,    
   ],
   imports: [
     BrowserModule,
