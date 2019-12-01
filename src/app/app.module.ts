@@ -15,6 +15,8 @@ import { FooterComponent } from './chatappmenu/footer/footer.component';
 import { ChatappmenuComponent } from './chatappmenu/chatappmenu.component';
 import { ChatAppHeaderComponent } from './chat-app-header/chat-app-header.component';
 import { ChatAppFooterComponent } from './chat-app-footer/chat-app-footer.component';
+import { ChatMessagesDisplayComponent } from './chat-messages-display/chat-messages-display.component';
+import { ChatpageComponent } from './chatpage/chatpage.component';
 
 
 
@@ -26,7 +28,9 @@ import { ChatAppFooterComponent } from './chat-app-footer/chat-app-footer.compon
     FooterComponent,
     ChatappmenuComponent,
     ChatAppHeaderComponent,
-    ChatAppFooterComponent,    
+    ChatAppFooterComponent,
+    ChatMessagesDisplayComponent,
+    ChatpageComponent,    
   ],
   imports: [
     BrowserModule,
