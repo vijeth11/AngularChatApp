@@ -11,6 +11,7 @@ import {MatInputModule} from '@angular/material';
 import {MatListModule} from '@angular/material/list';
 import { UserInfoTabComponent } from './user-info-tab/user-info-tab.component';
 import { ContactlistComponent } from './contactlist/contactlist.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -18,7 +19,8 @@ import { ContactlistComponent } from './contactlist/contactlist.component';
   declarations: [
     AppComponent,
     UserInfoTabComponent,
-    ContactlistComponent,    
+    ContactlistComponent,
+    FooterComponent,    
   ],
   imports: [
     BrowserModule,

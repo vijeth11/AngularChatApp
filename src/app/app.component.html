@@ -2,16 +2,7 @@
   <div class="col-sm-4 col-md-4">
     <app-user-info-tab (Expanded)="expanded($event)"></app-user-info-tab>
     <app-contactlist [HeightOfTheUserList]="HeightOfTheUserList" [maxHeightOfUserList]="maxHeightOfUserList" [messages]="messages" ></app-contactlist>
-    <div class="row" class="footer" #footerScreen>
-      <footer style="width:100%" class="input-group">
-        <button [ngStyle]="{'background': AddContactButtonColor}" (mouseover)="AddContactButtonColor = '#435F7A'" (mouseout)="AddContactButtonColor='#32465A'" class="raised" >
-          <span style="color:white">Add new Contact</span>
-      </button>
-      <button [ngStyle]="{'background': AddNewContactButtonColor}"(mouseover)="AddNewContactButtonColor = '#435F7A'" (mouseout)="AddNewContactButtonColor = '#32465A'" class="raised">
-          <span style="color:white">Add New Group</span>
-      </button>
-      </footer>
-    </div>
+    <app-footer></app-footer>
   </div>
   <div class="col-sm-8 col-md-8" style="padding-left: 0;padding-bottom: 0;">
     <div class="row">

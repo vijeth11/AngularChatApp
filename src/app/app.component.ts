@@ -8,10 +8,6 @@ import {MatFormField,} from '@angular/material/form-field';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  title = 'angularChat';
-  AddContactButtonColor = "#32465A";
-  AddNewContactButtonColor = "#32465A";
   HeightOfTheUserList = "78%"
   maxHeightOfUserList="77vh";
   messages:{from:string,display:string,color:string,setDefault:boolean}[]=[];
