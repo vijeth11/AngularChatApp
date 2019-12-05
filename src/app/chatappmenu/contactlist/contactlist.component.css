@@ -14,3 +14,41 @@ mat-nav-list {
     ::-webkit-scrollbar-thumb {
         background: #1f3449;
     }
+
+    .searchBox
+{
+    background: transparent;
+    border:0px;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height:20px;
+    color: white;
+}
+.disable_ripple:hover{
+  background: #2C3E50;
+  }
+.search-box{
+  height:25px;
+  
+}
+
+.fa-search{
+  color:white;
+}
+
+.searchBox::placeholder { /* Firefox, Chrome, Opera */ 
+  color: white; 
+  align-content: center;
+} 
+
+.searchBox::-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+  color: white; 
+  align-content: center;
+} 
+
+.searchBox::-ms-input-placeholder { /* Microsoft Edge */ 
+  color: white; 
+  align-content: center;
+} 

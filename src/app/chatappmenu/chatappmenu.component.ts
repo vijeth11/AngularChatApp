@@ -22,8 +22,8 @@ export class ChatappmenuComponent implements OnInit {
   expanded(data:boolean){
     if(data){
     //this.HeightOfTheUserList = String(this.completeScreen.nativeElement.offsetHeight - this.userInfoScreen.nativeElement.offsetHeight-this.footerScreen.nativeElement.offsetHeight)+"px";
-    this.HeightOfTheUserList= "51%";
-    this.maxHeightOfUserList="50vh"
+    this.HeightOfTheUserList= "45%";
+    this.maxHeightOfUserList="46vh"
     console.log(this.maxHeightOfUserList);
     }else{
       this.HeightOfTheUserList = "77%";
