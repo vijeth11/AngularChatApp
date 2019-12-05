@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatappmenuComponent implements OnInit {
 
-  HeightOfTheUserList = "78%"
+  HeightOfTheUserList = "77%"
   maxHeightOfUserList="77vh";
   messages:{from:string,display:string,color:string,setDefault:boolean}[]=[];
   constructor() { 
